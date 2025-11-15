@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Mi perfil</h2>
+  <p><strong>{{ user?.nombre }}</strong> ({{ user?.email }})</p>
+  <h3>Mis recetas</h3>
+  <div *ngFor="let r of misRecetas">
+    <h4>{{ r.titulo }}</h4>
+    <a [routerLink]="['/recetas', r.id]">Ver</a> | <a [routerLink]="['/editar', r.id]">Editar</a>
+  </div>
+</div>

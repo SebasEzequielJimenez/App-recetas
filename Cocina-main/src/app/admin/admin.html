@@ -1,0 +1,17 @@
+<section>
+  <h2>Admin - ABM Recetas</h2>
+
+  @if (recipes.length === 0) {
+    <p>No hay recetas cargadas.</p>
+  } @else {
+    @for (r of recipes; track r.id) {
+      <div class="card">
+        <h3>{{ r.title }}</h3>
+        <p>Publicado: {{ r.published }}</p>
+        <button (click)="togglePublish(r)">Toggle publicar</button>
+      </div>
+    } @empty {
+      <p>No se encontraron recetas.</p>
+    }
+  }
+</section>

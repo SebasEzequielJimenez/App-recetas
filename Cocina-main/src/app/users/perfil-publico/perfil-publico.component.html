@@ -1,0 +1,9 @@
+<div class="container" *ngIf="user">
+  <h2>{{ user.nombre }}</h2>
+  <p>{{ user.email }}</p>
+  <h3>Recetas publicadas</h3>
+  <div *ngFor="let r of recetas">
+    <h4>{{ r.titulo }}</h4>
+    <a [routerLink]="['/recetas', r.id]">Ver</a>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<section>
+  <h2>Recetas favoritas</h2>
+
+  @if (favorites.length === 0) {
+    <p>No hay recetas favoritas.</p>
+  } @else {
+    @for (fav of favorites; track fav.id) {
+      <article class="card">
+        <h3>{{ fav.title }}</h3>
+        <p>Categoría: {{ fav.category }}</p>
+        <p>Tiempo: {{ fav.time }} minutos</p>
+      </article>
+    } @empty {
+      <p>No se encontraron recetas.</p>
+    }
+  }
+</section>

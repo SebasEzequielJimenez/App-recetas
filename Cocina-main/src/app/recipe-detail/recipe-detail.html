@@ -1,0 +1,18 @@
+<section>
+  @if (recipe) {
+    <h2>{{ recipe.title }}</h2>
+    <p>Categoría: {{ recipe.category }}</p>
+    <p>Tiempo: {{ recipe.time }} minutos</p>
+
+    <h3>Ingredientes:</h3>
+    <ul>
+      @for (ing of recipe.ingredients; track ing) {
+        <li>{{ ing }}</li>
+      } @empty {
+        <li>No hay ingredientes cargados.</li>
+      }
+    </ul>
+  } @else {
+    <p>Cargando...</p>
+  }
+</section>

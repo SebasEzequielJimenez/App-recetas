@@ -1,0 +1,25 @@
+<section>
+  <h2>Recetas</h2>
+
+  <input
+    placeholder="Buscar por nombre"
+    (input)="applyFilter($any($event.target).value)" />
+
+  @if (recipes.length === 0) {
+    <p>No hay recetas.</p>
+  } @else {
+    @for (recipe of recipes; track recipe.id) {
+      @if (matches(recipe)) {
+        <article class="card">
+          <h3>
+            <a [routerLink]="['/recipes', recipe.id]">{{ recipe.title }}</a>
+          </h3>
+          <p>Categoría: {{ recipe.category }}</p>
+          <p>Tiempo: {{ recipe.time }} minutos</p>
+        </article>
+      }
+    } @empty {
+      <p>No hay recetas que coincidan con el filtro.</p>
+    }
+  }
+</section>
