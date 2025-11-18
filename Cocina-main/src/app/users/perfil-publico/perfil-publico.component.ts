@@ -1,26 +1,45 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { UsuarioService, Usuario } from '../../services/usuario.service';
+import { RecetaService, Receta } from '../../services/receta.service';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { UsuarioService } from '../../../services/usuario.service';
-import { RecetaService } from '../../../services/receta.service';
-import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-perfil-publico',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
+  selector: 'app-usuario-perfil-publico',
   templateUrl: './perfil-publico.component.html'
 })
-export class PerfilPublicoComponent implements OnInit {
-  user: any;
-  recetas: any[] = [];
 
-  constructor(private usuarioSvc: UsuarioService, private recetaSvc: RecetaService, private route: ActivatedRoute) {}
+
+export class UsuarioPerfilPublicoComponent implements OnInit {
+
+  usuario?: Usuario;
+  recetas: Receta[] = [];
+
+  constructor(
+    private route: ActivatedRoute,
+    private usuarioService: UsuarioService,
+    private recetaService: RecetaService
+  ) {}
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    if (id) {
-      this.usuarioSvc.getUsuario(id).subscribe(u => this.user = u);
-      this.recetaSvc.listarPorUsuario(id).subscribe(r => this.recetas = r);
-    }
+
+    this.usuarioService.getUsuarioById(id).subscribe(u => {
+      this.usuario = u;
+    });
+
+    this.recetaService.getRecetasByUsuarioId(id).subscribe(r => {
+      this.recetas = r.filter(r => r.estado === 'aprobada');
+    });
   }
 }
+
+@NgModule({
+  declarations: [UsuarioPerfilPublicoComponent],
+  imports:[
+    CommonModule,
+    RouterModule
+  ]
+})
+export class UsuarioPerfilPublicoModule {}

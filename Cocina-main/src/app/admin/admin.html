@@ -1,14 +1,16 @@
 <section>
-  <h2>Admin - ABM Recetas</h2>
+  <h2>Panel Administrador</h2>
 
-  @if (recipes.length === 0) {
+  @if (recetas.length === 0) {
     <p>No hay recetas cargadas.</p>
   } @else {
-    @for (r of recipes; track r.id) {
+    @for (r of recetas; track r.id) {
       <div class="card">
-        <h3>{{ r.title }}</h3>
-        <p>Publicado: {{ r.published }}</p>
-        <button (click)="togglePublish(r)">Toggle publicar</button>
+        <h3>{{ r.titulo }}</h3>
+        <p>Estado actual: {{ r.estado }}</p>
+        <button (click)="toggleEstado(r)">
+          Cambiar estado
+        </button>
       </div>
     } @empty {
       <p>No se encontraron recetas.</p>

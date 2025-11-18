@@ -1,0 +1,312 @@
+{
+  "recetas": [
+    {
+      "id": 1,
+      "titulo": "Paella Valenciana",
+      "descripcion": "Auténtica paella valenciana con mariscos y verduras frescas",
+      "ingredientes": [
+        "400g de arroz bomba",
+        "500g de mariscos variados (gambas, mejillones, calamares)",
+        "1 pimiento rojo",
+        "1 cebolla",
+        "2 dientes de ajo",
+        "1 cucharada de azafrán",
+        "1 litro de caldo de pescado",
+        "Aceite de oliva",
+        "Sal al gusto"
+      ],
+      "pasos": [
+        "Calentar el aceite en la paellera",
+        "Sofreír las verduras picadas hasta que estén doradas",
+        "Añadir el marisco y saltear 2 minutos",
+        "Incorporar el arroz y mezclar bien",
+        "Verter el caldo caliente y el azafrán",
+        "Cocinar a fuego medio durante 20 minutos sin remover",
+        "Dejar reposar 5 minutos antes de servir"
+      ],
+      "tiempoCoccion": 45,
+      "dificultad": "Media",
+      "categoria": "Principal",
+      "autor": "María González",
+      "imagenUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1ba4?w=600&h=400&fit=crop",
+      "estado": "aprobada",
+      "fechaCreacion": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "titulo": "Tortilla de Patatas Clásica",
+      "descripcion": "La tortilla de patatas española tradicional con cebolla",
+      "ingredientes": [
+        "6 patatas medianas",
+        "6 huevos grandes",
+        "1 cebolla grande",
+        "Aceite de oliva virgen extra",
+        "Sal al gusto"
+      ],
+      "pasos": [
+        "Pelar y cortar las patatas en rodajas finas",
+        "Picar la cebolla en juliana",
+        "Freír las patatas y cebolla en abundante aceite",
+        "Escurrir bien el exceso de aceite",
+        "Batir los huevos en un bol grande",
+        "Mezclar las patatas con los huevos batidos",
+        "Cuajar la tortilla en sartén por ambos lados",
+        "Servir caliente o a temperatura ambiente"
+      ],
+      "tiempoCoccion": 35,
+      "dificultad": "Fácil",
+      "categoria": "Principal",
+      "autor": "Carlos Rodríguez",
+      "imagenUrl": "https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?w=600&h=400&fit=crop",
+      "estado": "aprobada",
+      "fechaCreacion": "2024-01-14T15:20:00Z"
+    },
+    {
+      "id": 3,
+      "titulo": "Ensalada César con Pollo",
+      "descripcion": "Ensalada fresca con pollo a la plancha y aderezo césar casero",
+      "ingredientes": [
+        "1 lechuga romana",
+        "2 pechugas de pollo",
+        "50g de queso parmesano",
+        "100g de crutones",
+        "2 anchoas",
+        "1 diente de ajo",
+        "3 cucharadas de mayonesa",
+        "1 cucharada de mostaza Dijon",
+        "Jugo de limón",
+        "Aceite de oliva"
+      ],
+      "pasos": [
+        "Lavar y cortar la lechuga en trozos",
+        "Cocinar el pollo a la plancha y cortar en tiras",
+        "Preparar la salsa: mezclar mayonesa, mostaza, ajo, anchoas y limón",
+        "Rallar el queso parmesano",
+        "Mezclar la lechuga con el pollo y los crutones",
+        "Añadir la salsa y mezclar suavemente",
+        "Espolvorear con parmesano y servir"
+      ],
+      "tiempoCoccion": 20,
+      "dificultad": "Fácil",
+      "categoria": "Ensalada",
+      "autor": "Ana Martínez",
+      "imagenUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=600&h=400&fit=crop",
+      "estado": "aprobada",
+      "fechaCreacion": "2024-01-13T12:45:00Z"
+    },
+    {
+      "id": 4,
+      "titulo": "Brownies de Chocolate Intenso",
+      "descripcion": "Brownies densos y chocolatosos con nueces",
+      "ingredientes": [
+        "200g de chocolate negro",
+        "150g de mantequilla",
+        "3 huevos",
+        "200g de azúcar",
+        "100g de harina",
+        "50g de cacao en polvo",
+        "100g de nueces picadas",
+        "1 cucharadita de esencia de vainilla"
+      ],
+      "pasos": [
+        "Precalentar el horno a 180°C",
+        "Derretir el chocolate con la mantequilla al baño maría",
+        "Batir los huevos con el azúcar hasta que espumen",
+        "Incorporar el chocolate derretido a la mezcla de huevos",
+        "Añadir la harina y cacao tamizados",
+        "Agregar las nueces y la vainilla",
+        "Verter en molde engrasado y hornear 25 minutos",
+        "Dejar enfriar antes de cortar"
+      ],
+      "tiempoCoccion": 40,
+      "dificultad": "Media",
+      "categoria": "Postre",
+      "autor": "Laura Sánchez",
+      "imagenUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=400&fit=crop",
+      "estado": "aprobada",
+      "fechaCreacion": "2024-01-12T18:15:00Z"
+    },
+    {
+      "id": 5,
+      "titulo": "Guacamole Mexicano",
+      "descripcion": "Guacamole fresco y picante al estilo tradicional mexicano",
+      "ingredientes": [
+        "3 aguacates maduros",
+        "1 tomate",
+        "1/2 cebolla morada",
+        "1 chile jalapeño",
+        "Jugo de 1 lima",
+        "Cilantro fresco",
+        "Sal y pimienta"
+      ],
+      "pasos": [
+        "Cortar los aguacates por la mitad y retirar el hueso",
+        "Triturar la pulpa con un tenedor",
+        "Picar finamente el tomate, cebolla y jalapeño",
+        "Mezclar todos los ingredientes",
+        "Añadir el jugo de lima y cilantro picado",
+        "Sazonar con sal y pimienta al gusto",
+        "Servir inmediatamente con totopos"
+      ],
+      "tiempoCoccion": 10,
+      "dificultad": "Fácil",
+      "categoria": "Aperitivo",
+      "autor": "Diego Hernández",
+      "imagenUrl": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=600&h=400&fit=crop",
+      "estado": "aprobada",
+      "fechaCreacion": "2024-01-11T14:30:00Z"
+    },
+    {
+      "id": 6,
+      "titulo": "Sopa de Tomate Casera",
+      "descripcion": "Sopa cremosa de tomate con albahaca",
+      "ingredientes": [
+        "1kg de tomates maduros",
+        "1 cebolla",
+        "2 dientes de ajo",
+        "500ml de caldo de verduras",
+        "200ml de nata para cocinar",
+        "Albahaca fresca",
+        "Aceite de oliva",
+        "Sal y pimienta"
+      ],
+      "pasos": [
+        "Pelar y picar los tomates",
+        "Sofreír la cebolla y ajo picados",
+        "Añadir los tomates y cocinar 10 minutos",
+        "Incorporar el caldo y cocer 15 minutos más",
+        "Triturar hasta obtener una textura cremosa",
+        "Añadir la nata y albahaca picada",
+        "Sazonar y servir caliente"
+      ],
+      "tiempoCoccion": 35,
+      "dificultad": "Fácil",
+      "categoria": "Sopa",
+      "autor": "Elena Torres",
+      "imagenUrl": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&h=400&fit=crop",
+      "estado": "aprobada",
+      "fechaCreacion": "2024-01-10T11:20:00Z"
+    },
+    {
+      "id": 7,
+      "titulo": "Salmón a la Plancha con Hierbas",
+      "descripcion": "Salmón fresco cocinado a la plancha con hierbas aromáticas",
+      "ingredientes": [
+        "4 filetes de salmón",
+        "2 limones",
+        "Romero fresco",
+        "Eneldo",
+        "Aceite de oliva",
+        "Sal marina",
+        "Pimienta negra"
+      ],
+      "pasos": [
+        "Sazonar el salmón con sal y pimienta",
+        "Calentar la plancha con aceite de oliva",
+        "Cocinar el salmón 4 minutos por cada lado",
+        "Añadir las hierbas aromáticas al final",
+        "Exprimir limón fresco antes de servir",
+        "Acompañar con verduras al vapor"
+      ],
+      "tiempoCoccion": 15,
+      "dificultad": "Fácil",
+      "categoria": "Principal",
+      "autor": "Miguel Ángel López",
+      "imagenUrl": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&h=400&fit=crop",
+      "estado": "aprobada",
+      "fechaCreacion": "2024-01-09T19:45:00Z"
+    },
+    {
+      "id": 8,
+      "titulo": "Tiramisú Italiano",
+      "descripcion": "Postre italiano clásico con café y cacao",
+      "ingredientes": [
+        "500g de mascarpone",
+        "4 huevos",
+        "100g de azúcar",
+        "200ml de café fuerte",
+        "Bizcochos de soletilla",
+        "Cacao en polvo",
+        "Licor de café (opcional)"
+      ],
+      "pasos": [
+        "Preparar el café y dejar enfriar",
+        "Separar yemas y claras de huevo",
+        "Batir las yemas con el azúcar hasta blanquear",
+        "Añadir el mascarpone y mezclar",
+        "Montar las claras a punto de nieve e incorporar",
+        "Mojar los bizcochos en café",
+        "Montar capas de bizcochos y crema",
+        "Refrigerar 4 horas y espolvorear con cacao"
+      ],
+      "tiempoCoccion": 30,
+      "dificultad": "Media",
+      "categoria": "Postre",
+      "autor": "Sofia Ricci",
+      "imagenUrl": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&h=400&fit=crop",
+      "estado": "aprobada",
+      "fechaCreacion": "2024-01-08T16:10:00Z"
+    }
+  ],
+  
+  "recetasPendientes": [
+    {
+      "id": 9,
+      "titulo": "Receta Nueva de Usuario",
+      "descripcion": "Esta es una receta pendiente de aprobación",
+      "ingredientes": ["Ingrediente 1", "Ingrediente 2"],
+      "pasos": ["Paso 1", "Paso 2"],
+      "tiempoCoccion": 30,
+      "dificultad": "Fácil",
+      "categoria": "Principal",
+      "autor": "Usuario Nuevo",
+      "estado": "pendiente",
+      "fechaCreacion": "2024-01-16T09:00:00Z"
+    }
+  ],
+
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "María González",
+      "email": "maria@ejemplo.com",
+      "rol": "usuario"
+    },
+    {
+      "id": 2,
+      "nombre": "Admin CocinaFácil", 
+      "email": "admin@cocinafacil.com",
+      "rol": "administrador"
+    }
+  ],
+
+  "comentarios": [
+    {
+      "id": 1,
+      "contenido": "¡Excelente receta! La hice para mi familia y les encantó.",
+      "fechaCreacion": "2024-01-15T14:30:00Z",
+      "autor": "Carlos Rodríguez",
+      "idReceta": 1,
+      "idUsuario": 1
+    },
+    {
+      "id": 2,
+      "contenido": "Muy fácil de seguir, perfecta para principiantes.",
+      "fechaCreacion": "2024-01-14T16:45:00Z", 
+      "autor": "Ana Martínez",
+      "idReceta": 2,
+      "idUsuario": 2
+    }
+  ],
+
+  "favoritos": [
+    {
+      "idUsuario": 1,
+      "idReceta": 1
+    },
+    {
+      "idUsuario": 1, 
+      "idReceta": 3
+    }
+  ]
+}

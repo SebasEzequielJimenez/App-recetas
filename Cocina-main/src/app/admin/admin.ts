@@ -1,26 +1,34 @@
-
 import { CommonModule } from '@angular/common';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Component , OnInit} from '@angular/core';
 
 @Component({
   standalone: true,
-  selector: 'admin',
+  selector: 'app-admin-dashboard',
   imports: [CommonModule, HttpClientModule],
   templateUrl: './admin.html',
   styleUrls: ['./admin.css']
 })
-export class Admin implements OnInit {
-  recipes: any[] = [];
+export class AdminComponent implements OnInit {
+
+  recetas: any[] = [];
+
   constructor(private http: HttpClient) {}
+
   ngOnInit() {
     this.load();
   }
+
   load() {
-    this.http.get<any[]>('http://localhost:3000/recipes').subscribe(r => this.recipes = r || []);
+    this.http.get<any[]>('http://localhost:3000/recetas')
+      .subscribe(r => this.recetas = r || []);
   }
-  togglePublish(item: any) {
-    const updated = { ...item, published: !item.published };
-    this.http.put(`http://localhost:3000/recipes/${item.id}`, updated).subscribe(() => this.load());
+
+  toggleEstado(receta: any) {
+    const nuevoEstado = receta.estado === 'aprobada' ? 'pendiente' : 'aprobada';
+    const update = { ...receta, estado: nuevoEstado };
+
+    this.http.put(`http://localhost:3000/recetas/${receta.id}`, update)
+      .subscribe(() => this.load());
   }
 }

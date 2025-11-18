@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 @Component({
   standalone: true,
@@ -14,18 +13,26 @@ import { Observable } from 'rxjs';
 export class RecipeList implements OnInit {
   recipes: any[] = [];
   filter = '';
+
   constructor(private http: HttpClient) {}
+
   ngOnInit() {
-    this.load();
+    this.loadPublicRecipes();
   }
-  load() {
-    this.http.get<any[]>('http://localhost:3000/recipes').subscribe(r => this.recipes = r || []);
+
+  // Cargar solamente recetas públicas
+  loadPublicRecipes() {
+    // Endpoint sugerido: SOLO devuelve recetas aprobadas y sin datos sensibles
+    this.http.get<any[]>('http://localhost:3000/public/recipes')
+      .subscribe(r => this.recipes = r || []);
   }
+
   applyFilter(value: string) {
     this.filter = value.toLowerCase();
   }
+
   matches(r: any) {
-    const t = (r.title || '').toLowerCase();
-    return !this.filter || t.includes(this.filter);
+    const title = (r.title || '').toLowerCase();
+    return !this.filter || title.includes(this.filter);
   }
 }

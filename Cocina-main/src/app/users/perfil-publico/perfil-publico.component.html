@@ -1,9 +1,10 @@
-<div class="container" *ngIf="user">
-  <h2>{{ user.nombre }}</h2>
-  <p>{{ user.email }}</p>
-  <h3>Recetas publicadas</h3>
-  <div *ngFor="let r of recetas">
-    <h4>{{ r.titulo }}</h4>
-    <a [routerLink]="['/recetas', r.id]">Ver</a>
-  </div>
-</div>
+<h2>Perfil de {{ usuario?.nombreUsuario }}</h2>
+
+<img *ngIf="usuario?.fotoPerfil" [src]="usuario?.fotoPerfil" width="120">
+
+<h3>Recetas públicas</h3>
+<ul>
+  <li *ngFor="let r of recetas">
+    <a [routerLink]="['/recetas', r.id]">{{ r.titulo }}</a>
+  </li>
+</ul>
